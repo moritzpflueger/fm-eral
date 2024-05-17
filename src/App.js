@@ -6,34 +6,23 @@ function App() {
   return (
     <div className="w-full flex flex-col items-center">
       <Header />
-      <p className="p-10 max-w-4xl">
+      <p className="p-10 max-w-4xl text-lg">
         In the academic year 2023/24, we
-        deal with translocal relationships:
+        deal with <u>translocal relationships</u>:
 
-        The concept of translocality, de-
-        veloped in migration and mobility
+        The concept of <u>translocality</u>, developed in migration and mobility
 
-        research, has since been applied in
-
-        various disciplines and defined dif-
-        ferently depending on the subject
-
-        matter.
+        research, has since been applied invarious 
+        disciplines and defined differently depending on the subject matter.
 
         Nevertheless, it deals with the
         transcending of the local, the
         crossing of spatial boundaries,
         and the transfer of people, things,
 
-        ideas, or symbols between differ-
-        ent places and living spaces.
+        ideas, or symbols between <u>different places</u> and living spaces.
 
-        We are streaming from differ-
-        ent spaces from 06.06.2024-
-
-        21.06.2024, for more detailed in-
-        formation check out our
-
+        We are <span className="text-eralblue">streaming</span> from different spaces from 06.06.2024-21.06.2024, for more detailed information check out our
         program:        
       </p>
       <div className="flex justify-center text-5xl">
