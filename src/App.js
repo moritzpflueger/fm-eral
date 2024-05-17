@@ -1,11 +1,15 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
+import RadioPlayer from './components/RadioPlayer';
 import './App.css';
 
 function App() {
   return (
     <div className="w-full flex flex-col items-center">
       <Header />
+
+      <RadioPlayer />
+
       <p className="p-10 max-w-4xl text-lg">
         In the academic year 2023/24, we
         deal with <u>translocal relationships</u>:
