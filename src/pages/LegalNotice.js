@@ -2,9 +2,9 @@ import React from 'react';
 
 const LegalNotice = () => {
   return (
-    <div>
+    <div className="p-10">
       <h1>Legal Notice</h1>
-      {/* Add your LegalNotice content here */}
+      <p>⚠️ Work in Progress</p>
     </div>
   );
 };
