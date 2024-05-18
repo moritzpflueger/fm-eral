@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Synt';
+  src: url('../public/fonts/ABCSynt-Regular-Trial.woff2') format('woff2'),
+       url('../public/fonts/ABCSynt-Regular-Trial.woff') format('woff'),
+       url('../public/fonts/ABCSynt-Regular-Trial.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte';
+  src: url('../public/fonts/ABCWhyteMono-Regular-Trial.woff2') format('woff2'),
+       url('../public/fonts/ABCWhyteMono-Regular-Trial.woff') format('woff'),
+       url('../public/fonts/ABCWhyteMono-Regular-Trial.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
