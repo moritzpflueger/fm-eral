@@ -4,7 +4,7 @@ const Logo = () => {
 
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
-  const [fontSettings, setFontSettings] = useState({ slnt: -30, wght: 900 });
+  const [fontSettings, setFontSettings] = useState({ slnt: 0, wght: 400 });
 
   useEffect(() => {
 
