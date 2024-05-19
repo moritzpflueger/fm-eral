@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: 'Synt Variable';
+  src: url('../public/fonts/ABCSyntVariableVF-Trial.woff2') format('woff2-variations'),
+       url('../public/fonts/ABCSyntVariableVF-Trial.woff') format('woff-variations'),
+       url('../public/fonts/ABCSyntVariableVF-Trial.ttf') format('truetype-variations');
+  font-style: normal;
+  font-weight: 400 900;
+}
+
+@font-face {
   font-family: 'Synt';
   src: url('../public/fonts/ABCSynt-Regular-Trial.woff2') format('woff2'),
        url('../public/fonts/ABCSynt-Regular-Trial.woff') format('woff'),

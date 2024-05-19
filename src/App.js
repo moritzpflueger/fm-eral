@@ -11,12 +11,6 @@ function App() {
 
       {/* <RadioPlayer /> */}
 
-      <h1 
-        className="text-4xl px-10 font-serif text-center my-10"
-        style={{ fontFamily: 'Synt, sans-serif' }}
-      >
-        A Journey into Translocality
-      </h1>
       <IconArrowDown />
       <p 
         className="p-10 max-w-2xl"
@@ -41,7 +35,7 @@ function App() {
       </p>
       <div className="relative w-full my-16 py-16 px-5 flex items-center justify-center">
         <div
-          class="absolute inset-0 h-full w-full  bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:16px_16px]"
+          className="absolute inset-0 h-full w-full  bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:16px_16px]"
         ></div>
         <iframe 
           src="https://calendar.google.com/calendar/embed?src=ac131be6ead9fcedc826ee06da7a9437d1c025cadd699196b0b3b184ae576e63%40group.calendar.google.com&ctz=Europe%2FBerlin" 
