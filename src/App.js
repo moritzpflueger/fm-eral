@@ -39,7 +39,6 @@ function App() {
         tive experience, engaging audiences in unconventional ways and
         challenging conventional ideas of space and connection.      
       </p>
-      <IconArrowDown />
       <div className="relative w-full my-16 py-16 px-5 flex items-center justify-center">
         <div
           class="absolute inset-0 h-full w-full  bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:16px_16px]"
@@ -54,14 +53,12 @@ function App() {
           scrolling="no"
         ></iframe>        
       </div>
-      <IconArrowDown />
       <div className="w-full my-32 px-5 flex items-center justify-center">
         <iframe 
           className="w-full max-w-4xl aspect-[5/6] border-2" 
           src="https://docs.google.com/document/d/e/2PACX-1vT3BPAbMeSHgWqtz0cHxGBZnW6texpMgg56UsCv-oIeb43ri6Dd0g_o0bV4DPflVlQZJMaSiWMejubO/pub?embedded=true"
         ></iframe>
       </div>
-      <IconArrowDown />
       <Footer />
     </div>
   );
