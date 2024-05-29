@@ -4,6 +4,7 @@ import RadioPlayer from './components/RadioPlayer';
 import IconArrowDown from './components/IconArrowDown';
 import Schedule from './components/Schedule';
 import './App.css';
+import CookieBanner from './components/CookieBanner';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <IconArrowDown />
       <Schedule />
       <Footer />
+      <CookieBanner />
     </div>
   );
 }
