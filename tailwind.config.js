@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        eralblue: '#0000FF',
-        eralblack: '#231f20',
-        eralgray: '#a8a9ad',
+        fmBlack: '#272324',
+        fmGrey: '#a3a4a8',
+        fmBlue: '#2463af',
+        fmLightBlue: '#92b2d8',
+        fmWhite: '#f0f0f0',
       }
     },
   },
