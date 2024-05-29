@@ -51,6 +51,13 @@ function App() {
       <Schedule />
       <Footer />
       <CookieBanner />
+
+      <audio 
+        ref={audioRef}
+        className="mx-auto mt-5" 
+        src="https://streamer.radio.co/s953ef459b/listen" 
+        controls={false}
+      ></audio>
     </div>
   );
 }
