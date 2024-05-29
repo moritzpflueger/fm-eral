@@ -1,17 +1,55 @@
-import Logo from './Logo';
+import React, { useEffect, useState } from 'react';
+import IconMenu from './IconMenu';
+import CurrentSong from './CurrentSong';
 
-const Header = () => {
+const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight;
+    const totalScroll = (scrollTop / (scrollHeight - clientHeight)) * 100;
+
+    setScrollPosition(totalScroll);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);  
+
   return (
-    <header className="w-full p-5 sm:p-10 flex flex-col items-center justify-between text-sm sm:text-base">
-      <div className="flex items-center justify-between w-full">
-        <div className="flex items-center font-semibold">
-          <span className="text-3xl mr-2 text-eralblue">⏺</span> currently streaming
-        </div>
-        <div className="flex items-center font-semibold">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 100" fill="#00FF00" className="w-5 h-5 mr-2">
-            <path data-name="Path 321" d="M121.456,382.184v-.27c0-21.716-15.084-46.539-36.488-50.788,9.881-3.686,16.893-12.849,16.893-23.6a25.087,25.087,0,0,0-25.52-25.347,25.087,25.087,0,0,0-25.52,25.347c0,10.749,7.012,19.912,16.893,23.6-21.4,4.249-36.488,29.072-36.488,50.788v.27Z" transform="translate(-31.226 -282.182)"></path>
-          </svg>
-          13 people listening
+    <header className="z-20 w-full border-b border-black fixed bg-white flex justify-between text-sm sm:text-base">
+      <div
+        className="h-full absolute bg-fmBlue mix-blend-multiply transition-al" 
+        style={{ width: `${scrollPosition}%` }}
+      />
+      <div className="flex items-center justify-between w-full p-1">
+        <div className="flex items-center">
+          <button 
+            className={`z-30 ml-4 mr-2 ${ isPlaying ? ' text-5xl' : 'text-4xl' }`}
+            style={{ fontFamily: 'Webdings, sans-serif' }}
+            onClick={handleAudioClick}
+          >
+            {isPlaying ? '\u23F8' : '\u25B6'}
+          </button>
+          <div className="flex-col">
+            <div 
+              className="text-2xl italic"
+              style={{ fontFamily: 'Synt'}}
+            >
+              Currently streaming
+            </div>
+            <div
+              style={{ fontFamily: 'Whyte, sans-serif' }}
+            >
+              <CurrentSong />
+            </div>
+          </div>
         </div>
         <button 
           className="w-12 h-12 text-xl flex items-center font-semibold mr-3"
@@ -20,7 +58,6 @@ const Header = () => {
           <IconMenu />
         </button>
       </div>
-      <Logo />
     </header>
   );
 };
