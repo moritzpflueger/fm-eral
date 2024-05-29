@@ -31,13 +31,13 @@ const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
       <div className="flex items-center justify-between w-full p-1">
         <div className="flex items-center">
           <button 
-            className={`z-30 ml-4 mr-2 ${ isPlaying ? ' text-5xl' : 'text-4xl' }`}
+            className={`absolute z-30 ml-4 mr-2 ${ isPlaying ? ' text-5xl' : 'text-4xl' }`}
             style={{ fontFamily: 'Webdings, sans-serif' }}
             onClick={handleAudioClick}
           >
             {isPlaying ? '\u23F8' : '\u25B6'}
           </button>
-          <div className="flex-col">
+          <div className="flex-col ml-14">
             <div 
               className="text-2xl italic"
               style={{ fontFamily: 'Synt'}}
