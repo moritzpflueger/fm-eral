@@ -13,6 +13,12 @@ const Header = () => {
           </svg>
           13 people listening
         </div>
+        <button 
+          className="w-12 h-12 text-xl flex items-center font-semibold mr-3"
+          onClick={handleMenuClick}
+        >
+          <IconMenu />
+        </button>
       </div>
       <Logo />
     </header>
