@@ -25,12 +25,12 @@ const Logo = ({ isPlaying, handleClick }) => {
     <div className="w-full flex flex-col items-center">
       <img 
         src={'logo-test.png'} 
-        className="cursor-pointer max-w-96" 
+        className="cursor-pointer w-[80%] max-w-96" 
         alt="logo" 
         onClick={handleClick}
       />
       <h1 
-        className="text-7xl px-10 font-serif text-center mt-10"
+        className="text-6xl sm:text-7xl px-10 font-serif text-center mt-10"
         style={{
           fontFamily: 'Synt Variable, Synt, sans-serif',
           fontVariationSettings: `"wght" ${fontSettings.wght}, "slnt" ${fontSettings.slnt}`
