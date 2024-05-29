@@ -1,3 +1,4 @@
+import React, { useState, useRef, useEffect } from 'react';
 import Menu from './components/Menu';
 import Header from './components/Header';
 import Logo from './components/Logo';
@@ -7,6 +8,7 @@ import ListenersCount from './components/ListenersCount';
 import IconArrowDown from './components/IconArrowDown';
 import Schedule from './components/Schedule';
 import './App.css';
+import GoogleDocsEmbed from './components/GoogleDocsEmbed';
 import CookieBanner from './components/CookieBanner';
 
 function App() {
@@ -49,6 +51,13 @@ function App() {
       <IconArrowDown />
       <AboutText />
       <Schedule />
+      <span 
+        className="text-7xl my-10"
+        style={{ fontFamily: 'Synt, sans-serif' }}
+      >
+        &#x2195;
+      </span>
+      <GoogleDocsEmbed />
       <Footer />
       <CookieBanner />
 
