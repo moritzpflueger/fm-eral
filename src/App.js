@@ -44,7 +44,6 @@ function App() {
       <br />
       <br />
       <br />
-      <br />
       <ListenersCount />
       <Logo isPlaying={isPlaying} handleClick={togglePlayPause} />
 
