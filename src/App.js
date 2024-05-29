@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import AboutText from './components/AboutText';
 import Footer from './components/Footer';
 import RadioPlayer from './components/RadioPlayer';
 import IconArrowDown from './components/IconArrowDown';
@@ -14,6 +15,7 @@ function App() {
       {/* <RadioPlayer /> */}
 
       <IconArrowDown />
+      <AboutText />
       <Schedule />
       <Footer />
       <CookieBanner />
