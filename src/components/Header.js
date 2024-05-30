@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import IconMenu from './IconMenu';
+import IconMenu from './icons/IconMenu';
 import CurrentSong from './CurrentSong';
-import IconPlay from './IconPlay';
-import IconPause from './IconPause';
+import IconPlay from './icons/IconPlay';
+import IconPause from './icons/IconPause';
 
 const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
 
