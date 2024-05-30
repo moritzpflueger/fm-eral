@@ -55,11 +55,7 @@ const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
             >
               {headline}
             </div>
-            <div
-              style={{ fontFamily: 'Whyte, sans-serif' }}
-            >
-              <CurrentSong />
-            </div>
+            <CurrentSong />
           </div>
         </div>
         <button 

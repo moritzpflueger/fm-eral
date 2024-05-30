@@ -29,6 +29,10 @@
   font-style: normal;
 }
 
+body {
+  font-family: 'Whyte', sans-serif;
+}
+
 .swiper-button-prev:after {
   font-family: 'Synt';
   content: '\2190';

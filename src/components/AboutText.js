@@ -3,7 +3,6 @@ const AboutText = () => {
     <section 
       id="about"
       className="p-10 max-w-2xl mb-32 pt-64 -mt-56"
-      style={{ fontFamily: 'Whyte, sans-serif' }}
     >
       People, goods, policies, ideas are strongly interconnected in our today’s world; images and sounds float through high speed networks, knowledge is instantaneously exchanged between diverse institutions, resources travel through physical space, and people migrate taking their ideas and languages with them. Instead of adopting a bird’s-eye global perspective to approach such flows and movements, “FM-eral” adopts a position on the ground. It examines the localities that are transconnected and may transform when establishing contact zones, whether they are geographically close or distant.
       <br />
