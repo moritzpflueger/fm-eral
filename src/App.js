@@ -47,7 +47,7 @@ function App() {
         handleMenuClick={() => setMenuIsVisible(true)}
         onHeightChange={(height) => setHeaderHeight(height)}
       />
-      <ListenersCount />
+      <ListenersCount isPlaying={isPlaying} />
       <Logo isPlaying={isPlaying} handleClick={togglePlayPause} />
 
       <IconArrowDown />
