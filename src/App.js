@@ -5,7 +5,8 @@ import Logo from './components/Logo';
 import AboutText from './components/AboutText';
 import Footer from './components/Footer';
 import ListenersCount from './components/ListenersCount';
-import IconArrowDown from './components/IconArrowDown';
+import IconArrowDown from './components/icons/IconArrowDown';
+import IconArrowUpDown from './components/icons/IconArrowUpDown';
 import Schedule from './components/Schedule';
 import './App.css';
 import GoogleDocsEmbed from './components/GoogleDocsEmbed';
@@ -50,12 +51,7 @@ function App() {
       <IconArrowDown />
       <AboutText />
       <Schedule />
-      <span 
-        className="text-7xl my-10"
-        style={{ fontFamily: 'Synt, sans-serif' }}
-      >
-        &#x2195;
-      </span>
+      <IconArrowUpDown />
       <GoogleDocsEmbed />
       <Footer />
       <CookieBanner />
