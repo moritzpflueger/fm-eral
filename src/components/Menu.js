@@ -21,7 +21,7 @@ const Menu = ({ showMenu, handleMenuToggle }) => {
               <IconClose />
             </button>
           </li>
-          <li className="text-2xl">
+          <li className="text-xl sm:text-2xl">
             FMeral.world
           </li>
           <li className="mt-16" style={{ fontFamily: 'Synt, serif'}}>
@@ -44,7 +44,7 @@ const Menu = ({ showMenu, handleMenuToggle }) => {
               Instagram
             </a>
           </li>
-          <li className="mt-16 mb-8 text-2xl flex gap-5">
+          <li className="mt-16 mb-8 text-xl sm:text-2xl flex gap-2 sm:gap-5">
             <Link to="/impressum" onClick={hideMenu}>
               Impressum
             </Link>
