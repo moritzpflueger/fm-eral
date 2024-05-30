@@ -1,6 +1,14 @@
-import React from 'react';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const LegalNotice = () => {
+
+  const { location } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+  
   return (
     <div className="p-10 w-full max-w-3xl">
       <h1 
