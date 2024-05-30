@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useAudio } from '../context/AudioContext';
 
-const Logo = ({ isPlaying, handleClick }) => {
+const Logo = () => {
 
   const [fontSettings, setFontSettings] = useState({ slnt: 0, wght: 400 });
+  const { isPlaying, togglePlayPause } = useAudio();
 
   useEffect(() => {
     let interval;
@@ -27,7 +29,7 @@ const Logo = ({ isPlaying, handleClick }) => {
         src={'logo-test.png'} 
         className="cursor-pointer w-[80%] max-w-96" 
         alt="logo" 
-        onClick={handleClick}
+        onClick={togglePlayPause}
       />
       <h1 
         className="text-6xl sm:text-7xl px-10 font-serif text-center mt-10"

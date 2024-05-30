@@ -1,9 +1,11 @@
 import { useEffect, useState, useRef } from 'react';
 import IconUser from './icons/IconUser';
+import { useAudio } from '../context/AudioContext';
 
-const ListenerCount = ({ isPlaying }) => {
+const ListenerCount = () => {
   const [listeners, setListeners] = useState(getListeners());
   const hasMounted = useRef(false);
+  const { isPlaying } = useAudio();
 
   function generateBaseListeners() {
     const now = new Date();

@@ -3,12 +3,14 @@ import IconMenu from './icons/IconMenu';
 import CurrentSong from './CurrentSong';
 import IconPlay from './icons/IconPlay';
 import IconPause from './icons/IconPause';
+import { useAudio } from '../context/AudioContext';
 
-const Header = ({ handleAudioClick, isPlaying, handleMenuClick, onHeightChange }) => {
+const Header = ({ handleMenuClick, onHeightChange }) => {
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [headline, setHeadline] = useState('Currently streaming');
   const headerRef = useRef(null);
+  const { isPlaying, togglePlayPause } = useAudio();
 
   const handleScroll = () => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -74,7 +76,7 @@ const Header = ({ handleAudioClick, isPlaying, handleMenuClick, onHeightChange }
           <button 
             className={`absolute z-30 ml-4 mr-2 ${ isPlaying ? ' text-5xl' : 'text-4xl' }`}
             style={{ fontFamily: 'Webdings, sans-serif' }}
-            onClick={handleAudioClick}
+            onClick={togglePlayPause}
           >
             {isPlaying ? <IconPause /> : <IconPlay />}
           </button>
