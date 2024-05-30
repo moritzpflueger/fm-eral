@@ -15,7 +15,11 @@ const Menu = ({ showMenu, handleMenuToggle }) => {
               x close
             </button>
           </li>
-          <li className="font-semibold mt-0">About</li>
+          <li className="font-semibold mt-0">
+            <a href="#about" onClick={hideMenu}>
+              About
+            </a>
+          </li>
           <li className="font-semibold mt-8">Schedule</li>
           <li className="font-semibold mt-8">Artists</li>
           <li className="font-semibold mt-8">Impressum</li>

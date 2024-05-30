@@ -1,26 +1,15 @@
 const AboutText = () => {
   return (
-    <p 
-      className="p-10 max-w-2xl mb-32"
+    <section 
+      id="about"
+      className="p-10 max-w-2xl mb-32 pt-64 -mt-56"
       style={{ fontFamily: 'Whyte, sans-serif' }}
     >
-      What exactly is translocality, and how does it connect with radio?
-      Translocality encompasses the interconnectedness and dynamic movement of ideas, people, and practices across diverse localities. It facilitates exchanges of knowledge, culture, and resources across various geographical, social, and cultural contexts.
+      People, goods, policies, ideas are strongly interconnected in our today’s world; images and sounds float through high speed networks, knowledge is instantaneously exchanged between diverse institutions, resources travel through physical space, and people migrate taking their ideas and languages with them. Instead of adopting a bird’s-eye global perspective to approach such flows and movements, “FM-eral” adopts a position on the ground. It examines the localities that are transconnected and may transform when establishing contact zones, whether they are geographically close or distant.
       <br />
       <br />
-      Radio serves as a powerful illustration of translocality, reaching
-      out to diverse audiences across different geographical regions.
-      Through radio waves, information, ideas, and cultural expressions
-      transcend physical boundaries, resonating with communities and
-      bridging geographical distances. The medium of radio provides a
-      platform for the amplification of diverse voices and perspectives.
-      <br />
-      <br />
-      As we explore the concept of translocality further, we’ve innovatively transformed our studio into a mobile cargo space. This
-      adaptation allows us to showcase works and traces while simultaneously functioning as a mobile radio station. This dynamic approach transforms the presentation of works into a performa-
-      tive experience, engaging audiences in unconventional ways and
-      challenging conventional ideas of space and connection.      
-    </p>    
+      This year’s annual show articulates such stable or ephemeral translocal-ities in a hybrid, collectively-shaped format: a radio station and a cargo space. “FM-eral” uses radio waves to transcend physical boundaries, resonating with communities and bridging geographical regions. We will be broadcasting 24/7 and have daily live shows between 17:00 and 20:00. “FM-eral” transforms the atelier space into a cargo space where mobile elements allow new relationships to be established again and again between the students’ works. This dynamic approach transforms their objects into a performative experience, engaging audiences in unconventional ways and challenging common ideas of space and connection. We are (t)here!            
+    </section>    
   )
 }
 
