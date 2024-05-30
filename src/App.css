@@ -63,3 +63,7 @@ body {
 .swiper-button-next {
   right: -60px; /* Adjust as needed */
 }
+
+a {
+  @apply hover:underline;
+}
