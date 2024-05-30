@@ -25,10 +25,10 @@ const GoogleDocsEmbed = () => {
   return (
     <section 
       id="artists"
-      className="w-full relative flex justify-center px-5 pt-48 -mt-56"
+      className="w-full relative flex justify-center px-5 pt-24 -mt-28"
     >
       <div
-        className="absolute top-48 inset-0 h-[calc(100%-192px)] w-full bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:16px_16px]"
+        className="absolute top-24 inset-0 h-[calc(100%-100px)] w-full bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:16px_16px]"
       ></div>
       <div className="z-10 bg-white w-full max-w-3xl mt-9 mb-16 flex items-center justify-center border border-black">
         {/* <iframe

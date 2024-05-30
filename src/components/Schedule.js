@@ -7,7 +7,7 @@ const Schedule = () => {
   return (
     <section 
       id="schedule"
-      className="w-full flex justify-center pt-48 -mt-56"
+      className="w-full flex justify-center pt-24 -mt-24"
     >
       <div 
         className="relative w-full max-w-3xl hidden sm:block border border-black"
