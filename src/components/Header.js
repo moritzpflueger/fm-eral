@@ -55,8 +55,7 @@ const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
             >
               {headline}
             </div>
-            {/* <CurrentSong /> */}
-             Hans-Jakob Christian Mühlethaler - Hohlstrasse Demo 2
+            <CurrentSong />
           </div>
         </div>
         <div>
