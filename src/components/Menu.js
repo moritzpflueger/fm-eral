@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import IconClose from './icons/IconClose';
 
 const Menu = ({ showMenu, handleMenuToggle }) => {
@@ -23,34 +24,34 @@ const Menu = ({ showMenu, handleMenuToggle }) => {
           <li className="text-2xl">
             FMeral.world
           </li>
-          <li className="mt-16">
-            <a href="#about" onClick={hideMenu}>
+          <li className="mt-16" style={{ fontFamily: 'Synt, serif'}}>
+            <Link to="/#about" onClick={hideMenu}>
               About
-            </a>
+            </Link>
           </li>
-          <li className="mt-8">
-            <a href="#schedule" onClick={hideMenu}>
+          <li className="mt-8" style={{ fontFamily: 'Synt, serif'}}>
+            <Link to="/#schedule" onClick={hideMenu}>
               Schedule
-            </a>
+            </Link>
           </li>
-          <li className="mt-8">
-            <a href="#artists" onClick={hideMenu}>
+          <li className="mt-8" style={{ fontFamily: 'Synt, serif'}}>
+            <Link to="/#artists" onClick={hideMenu}>
               Artists
-            </a>
+            </Link>
           </li>
-          <li className="mt-8">
+          <li className="mt-8" style={{ fontFamily: 'Synt, serif'}}>
             <a href="https://www.instagram.com" onClick={hideMenu}>
               Instagram
             </a>
           </li>
           <li className="mt-16 mb-8 text-2xl flex gap-5">
-            <a href="/impressum" onClick={hideMenu}>
+            <Link to="/impressum" onClick={hideMenu}>
               Impressum
-            </a>
+            </Link>
             /
-            <a href="/legal" onClick={hideMenu}>
+            <Link to="/legal" onClick={hideMenu}>
               Legal Notice
-            </a>
+            </Link>
           </li>
         </ul>   
         <div onClick={hideMenu} className="absolute w-full h-full bg-black bg-opacity-25"></div>

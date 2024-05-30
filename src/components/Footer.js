@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import IconInstagram from './icons/IconInstagram';
 import IconSoundcloud from './icons/IconSoundcloud';
 
@@ -18,7 +19,7 @@ const Footer = () => {
         nimagni volum faceptate et, que reper          
       </p>
       <div className="flex flex-wrap items-center justify-between py-10 order-1">
-        <a href="/legal" >legal notice</a>
+        <Link to="/legal" >legal notice</Link>
         <div className="flex mx-auto pt-8 sm:pt-0 gap-5 items-center sm:justify-center order-3 sm:order-2">
 
           <a href="https://www.instagram.com" target="_blank">
@@ -30,7 +31,7 @@ const Footer = () => {
           </a>
 
         </div>
-        <a href="/impressum" className="order-2 sm:order-3">impressum</a>
+        <Link to="/impressum" className="order-2 sm:order-3">impressum</Link>
       </div>
     </footer>
   );
