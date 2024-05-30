@@ -5,6 +5,7 @@ import CurrentSong from './CurrentSong';
 const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
 
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [headline, setHeadline] = useState('Currently streaming');
 
   const handleScroll = () => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -21,6 +22,14 @@ const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);  
+
+  useEffect(() => {
+    if (scrollPosition > 5) {
+      setHeadline('FMeral');
+    } else {
+      setHeadline('Currently streaming');
+    }
+  }, [scrollPosition]);  
 
   return (
     <header className="z-20 w-full border-b border-black fixed bg-white flex justify-between text-sm sm:text-base">
@@ -42,7 +51,7 @@ const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
               className="text-2xl italic"
               style={{ fontFamily: 'Synt'}}
             >
-              Currently streaming
+              {headline}
             </div>
             <div
               style={{ fontFamily: 'Whyte, sans-serif' }}
