@@ -8,11 +8,11 @@ const LegalNotice = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
-  
+
   return (
     <div className="p-10 w-full max-w-3xl">
       <h1 
-        className="text-4xl sm:text-6xl sm:text-7xl px-10 font-serif text-center my-10 sm:my-16"
+        className="text-4xl sm:text-7xl px-10 font-serif text-center my-10 sm:my-16"
         style={{ fontFamily: 'Synt, serif' }}
       >
         Legal Notice
