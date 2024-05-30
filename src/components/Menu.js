@@ -20,10 +20,26 @@ const Menu = ({ showMenu, handleMenuToggle }) => {
               About
             </a>
           </li>
-          <li className="font-semibold mt-8">Schedule</li>
-          <li className="font-semibold mt-8">Artists</li>
-          <li className="font-semibold mt-8">Impressum</li>
-          <li className="font-semibold mt-8">Legal Notice</li>
+          <li className="font-semibold mt-8">
+            <a href="#schedule" onClick={hideMenu}>
+              Schedule
+            </a>
+          </li>
+          <li className="font-semibold mt-8">
+            <a href="#artists" onClick={hideMenu}>
+              Artists
+            </a>
+          </li>
+          <li className="font-semibold mt-8">
+            <a href="/impressum" onClick={hideMenu}>
+              Impressum
+            </a>
+          </li>
+          <li className="font-semibold mt-8">
+            <a href="/legal" onClick={hideMenu}>
+              Legal Notice
+            </a>
+          </li>
         </ul>   
         <div onClick={hideMenu} className="absolute w-full h-full bg-black bg-opacity-25"></div>
       </div>

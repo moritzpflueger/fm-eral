@@ -5,7 +5,10 @@ import 'swiper/css/navigation';
 
 const Schedule = () => {
   return (
-    <div className="w-full flex justify-center">
+    <section 
+      id="schedule"
+      className="w-full flex justify-center pt-48 -mt-56"
+    >
       <div 
         className="relative w-full max-w-3xl hidden sm:block border border-black"
         style={{ fontFamily: 'Synt, sans-serif' }}
@@ -34,7 +37,7 @@ const Schedule = () => {
         <div className="flex items-center justify-center border border-black w-full mb-5 aspect-video">Mobile Schedule 2</div>
         <div className="flex items-center justify-center border border-black w-full mb-5 aspect-video">Mobile Schedule 3</div>
       </div>
-    </div>
+    </section>
   );
 }
 export default Schedule;
