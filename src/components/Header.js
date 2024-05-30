@@ -90,9 +90,9 @@ const Header = ({ handleMenuClick, onHeightChange }) => {
             <CurrentSong />
           </div>
         </div>
-        <div>
+        <div className="z-30">
           <button 
-            className="z-30 w-10 h-10 text-xl mr-3"
+            className="w-10 h-10 text-xl mr-3"
             onClick={handleMenuClick}
           >
             <IconMenu />
