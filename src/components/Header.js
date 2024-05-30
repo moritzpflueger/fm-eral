@@ -58,12 +58,14 @@ const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
             <CurrentSong />
           </div>
         </div>
-        <button 
-          className="z-30 w-10 h-10 text-xl mr-3"
-          onClick={handleMenuClick}
-        >
-          <IconMenu />
-        </button>
+        <div>
+          <button 
+            className="z-30 w-10 h-10 text-xl mr-3"
+            onClick={handleMenuClick}
+          >
+            <IconMenu />
+          </button>          
+        </div>
       </div>
     </header>
   );
