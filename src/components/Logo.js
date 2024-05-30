@@ -33,10 +33,7 @@ const Logo = () => {
       />
       <h1 
         className="text-6xl sm:text-7xl px-10 font-serif text-center mt-10"
-        style={{
-          fontFamily: 'Synt Variable, Synt, sans-serif',
-          fontVariationSettings: `"wght" ${fontSettings.wght}, "slnt" ${fontSettings.slnt}`
-        }}
+        style={{ fontFamily: 'Synt, serif' }}
       >
         98.6 MHz
       </h1>
