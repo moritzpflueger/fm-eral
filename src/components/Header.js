@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import IconMenu from './IconMenu';
 import CurrentSong from './CurrentSong';
+import IconPlay from './IconPlay';
+import IconPause from './IconPause';
 
 const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
 
@@ -44,9 +46,9 @@ const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
             style={{ fontFamily: 'Webdings, sans-serif' }}
             onClick={handleAudioClick}
           >
-            {isPlaying ? '\u23F8' : '\u25B6'}
+            {isPlaying ? <IconPause /> : <IconPlay />}
           </button>
-          <div className="flex-col ml-14">
+          <div className="flex-col ml-16">
             <div 
               className="text-2xl italic"
               style={{ fontFamily: 'Synt'}}
