@@ -24,35 +24,36 @@ body {
   font-family: 'Whyte', sans-serif;
 }
 
+.swiper-button-prev:after,
+.swiper-button-next:after { 
+  font-family: 'Synt' !important;
+  color: #000 !important;
+  font-size: 72px !important;
+}
+
 .swiper-button-prev:after {
-  font-family: 'Synt';
-  content: '\2190';
-  color: #000;
-  font-size: 72px;
+  content: '\2190' !important;
 }
 
 .swiper-button-next:after {
-  font-family: 'Synt';
-  content: '\2192';
-  color: #000;
-  font-size: 72px;
+  content: '\2192' !important;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  position: absolute;
-  top: 53%;
-  transform: translateY(-50%);
-  z-index: 10;
-  cursor: pointer;
+  position: absolute !important;
+  top: 53% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10 !important;
+  cursor: pointer !important;
 }
 
 .swiper-button-prev {
-  left: -60px; /* Adjust as needed */
+  left: -60px !important; /* Adjust as needed */
 }
 
 .swiper-button-next {
-  right: -60px; /* Adjust as needed */
+  right: -60px !important; /* Adjust as needed */
 }
 
 a {
