@@ -61,7 +61,7 @@ const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
           </div>
         </div>
         <button 
-          className="w-12 h-12 text-xl flex items-center font-semibold mr-3"
+          className="z-30 w-12 h-12 text-xl flex items-center font-semibold mr-3"
           onClick={handleMenuClick}
         >
           <IconMenu />
