@@ -17,6 +17,7 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);  
   const [menuIsVisible, setMenuIsVisible] = useState(false);
+  const [headerHeight, setHeaderHeight] = useState(0);
 
   const togglePlayPause = () => {
     if (isPlaying) {
@@ -32,7 +33,10 @@ function App() {
   }, [menuIsVisible]);
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div 
+      className="w-full flex flex-col items-center"
+      style={{ paddingTop: `${headerHeight + 16}px`}}
+    >
       <Menu 
         showMenu={menuIsVisible}
         handleMenuToggle={() => setMenuIsVisible(false)} 
@@ -41,10 +45,8 @@ function App() {
         isPlaying={isPlaying} 
         handleAudioClick={togglePlayPause} 
         handleMenuClick={() => setMenuIsVisible(true)}
+        onHeightChange={(height) => setHeaderHeight(height)}
       />
-      <br />
-      <br />
-      <br />
       <ListenersCount />
       <Logo isPlaying={isPlaying} handleClick={togglePlayPause} />
 

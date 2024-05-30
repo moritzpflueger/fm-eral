@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import IconMenu from './icons/IconMenu';
 import CurrentSong from './CurrentSong';
 import IconPlay from './icons/IconPlay';
 import IconPause from './icons/IconPause';
 
-const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
+const Header = ({ handleAudioClick, isPlaying, handleMenuClick, onHeightChange }) => {
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [headline, setHeadline] = useState('Currently streaming');
+  const headerRef = useRef(null);
 
   const handleScroll = () => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -26,15 +27,44 @@ const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
   }, []);  
 
   useEffect(() => {
-    if (scrollPosition > 5) {
+    if (scrollPosition > 0) {
       setHeadline('FMeral');
     } else {
       setHeadline('Currently streaming');
     }
   }, [scrollPosition]);  
 
+  useEffect(() => {
+    const headerElement = headerRef.current;
+
+    const updateHeaderHeight = () => {
+      if (headerElement) {
+        onHeightChange(headerElement.offsetHeight);
+      }
+    };
+    const resizeObserver = new ResizeObserver(() => {
+      updateHeaderHeight();
+    });
+    if (headerElement) {
+      resizeObserver.observe(headerElement);
+    }
+    // Initial measurement
+    updateHeaderHeight();
+
+    // Cleanup observer on unmount
+    return () => {
+      if (headerElement) {
+        resizeObserver.unobserve(headerElement);
+      }
+    };
+  }, [onHeightChange]); // Include onHeightChange in the dependency array to ensure it's captured correctly
+
+
   return (
-    <header className="z-20 w-full border-b border-black fixed bg-white flex justify-between text-sm sm:text-base">
+    <header 
+      ref={headerRef}
+      className="z-20 w-full border-b border-black fixed top-0 bg-white flex justify-between text-sm sm:text-base"
+    >
       <div
         className="h-full absolute bg-fmBlue mix-blend-multiply" 
         style={{ width: `${scrollPosition}%` }}
