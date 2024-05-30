@@ -6,7 +6,7 @@ const IconPlay = () => (
     fill="currentColor" 
     stroke="none" 
   >
-    <polygon points="0 3 22 12 0 21 0 3"></polygon>
+    <polygon points="0 3 20 12 0 21 0 3"></polygon>
   </svg>
 );
 

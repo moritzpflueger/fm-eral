@@ -8,6 +8,7 @@ const IconMenu = () => {
       fill="none" 
       stroke="currentColor" 
       strokeWidth="2"
+      className='text-black'
     >
       <line x1="0" y1="5" x2="24" y2="5" />
       <line x1="0" y1="12" x2="24" y2="12" />
