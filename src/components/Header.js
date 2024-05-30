@@ -36,7 +36,7 @@ const Header = ({ handleAudioClick, isPlaying, handleMenuClick }) => {
   return (
     <header className="z-20 w-full border-b border-black fixed bg-white flex justify-between text-sm sm:text-base">
       <div
-        className="h-full absolute bg-fmBlue mix-blend-multiply transition-al" 
+        className="h-full absolute bg-fmBlue mix-blend-multiply" 
         style={{ width: `${scrollPosition}%` }}
       />
       <div className="flex items-center justify-between w-full p-1">
