@@ -12,13 +12,16 @@ const Footer = () => {
         <Link to="/legal" >legal notice</Link>
         <div className="flex mx-auto pt-8 sm:pt-0 gap-5 items-center sm:justify-center order-3 sm:order-2">
 
-          <a href="https://www.instagram.com" target="_blank">
+          <a href="https://www.instagram.com/zhdk_transdisciplinary" target="_blank">
             <IconInstagram />          
           </a>
           
-          <a href="https://www.soundcloud.com" target="_blank">
+          <a href="https://soundcloud.com/kontakt-mtr" target="_blank">
             <IconSoundcloud />
           </a>
+
+          {/* TODO: Add icon and link to ZHDK? */}
+          {/* https://www.zhdk.ch/ */}
 
         </div>
         <Link to="/impressum" className="order-2 sm:order-3">impressum</Link>

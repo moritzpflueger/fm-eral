@@ -40,7 +40,7 @@ const Menu = ({ showMenu, handleMenuToggle }) => {
             </Link>
           </li>
           <li className="mt-8" style={{ fontFamily: 'Synt, serif'}}>
-            <a href="https://www.instagram.com" target="_blank" onClick={hideMenu}>
+            <a href="https://www.instagram.com/zhdk_transdisciplinary" target="_blank" onClick={hideMenu}>
               Instagram
             </a>
           </li>
