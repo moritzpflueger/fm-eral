@@ -67,22 +67,22 @@ const Logo = () => {
                 viewBox='0 0 48 48'
                 className="w-[400px]"
               >
-                <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="#fff" stroke-width="1px" stroke-opacity="1">
+                <circle cx="50%" cy="50%" r="0" fillOpacity="0" stroke="#fff" strokeWidth="1px" strokeOpacity="1">
                   <animate attributeName="r" from="0" to="20" dur="4s" repeatCount="indefinite" />
                   <animate attributeName="stroke-opacity" from="1" to="0" dur="4s" repeatCount="indefinite"></animate>
                 </circle>
                 
-                <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="#fff" stroke-width="1px" stroke-opacity="1">
+                <circle cx="50%" cy="50%" r="0" fillOpacity="0" stroke="#fff" strokeWidth="1px" strokeOpacity="1">
                   <animate attributeName="r" from="0" to="20" dur="4s" repeatCount="indefinite" begin="0.75s" />
                   <animate attributeName="stroke-opacity" from="1" to="0" dur="4s" repeatCount="indefinite" begin="0.75s"></animate>
                 </circle>
                 
-                <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="#fff" stroke-width="1px" stroke-opacity="1">
+                <circle cx="50%" cy="50%" r="0" fillOpacity="0" stroke="#fff" strokeWidth="1px" strokeOpacity="1">
                   <animate attributeName="r" from="0" to="20" dur="4s" repeatCount="indefinite" begin="1.5s" />
                   <animate attributeName="stroke-opacity" from="1" to="0" dur="4s" repeatCount="indefinite" begin="1.5s"></animate>
                 </circle>
 
-                <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="#fff" stroke-width="1px" stroke-opacity="1">
+                <circle cx="50%" cy="50%" r="0" fillOpacity="0" stroke="#fff" strokeWidth="1px" strokeOpacity="1">
                   <animate attributeName="r" from="0" to="20" dur="4s" repeatCount="indefinite" begin="1.75s" />
                   <animate attributeName="stroke-opacity" from="1" to="0" dur="4s" repeatCount="indefinite" begin="1.75s"></animate>
                 </circle>
