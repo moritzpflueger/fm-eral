@@ -18,7 +18,7 @@ const Footer = () => {
         as natur arum is dolor re prorese quatium quatur atem nem
         nimagni volum faceptate et, que reper          
       </p>
-      <div className="flex flex-wrap items-center justify-between py-10 order-1">
+      <div className="flex flex-wrap items-center justify-between py-10 order-1 gap-5">
         <Link to="/legal" >legal notice</Link>
         <div className="flex mx-auto pt-8 sm:pt-0 gap-5 items-center sm:justify-center order-3 sm:order-2">
 
