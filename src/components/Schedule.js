@@ -10,7 +10,7 @@ const Schedule = () => {
       className="w-full flex justify-center pt-24 -mt-24"
     >
       <div 
-        className="relative w-full max-w-3xl hidden sm:block border border-black"
+        className="relative w-full max-w-3xl hidden sm:block"
         style={{ fontFamily: 'Synt, sans-serif' }}
       >
         <Swiper
@@ -25,17 +25,35 @@ const Schedule = () => {
             }
           }
         >
-          <SwiperSlide className="flex items-center justify-center aspect-video">Desktop Schedule 1</SwiperSlide>
-          <SwiperSlide className="flex items-center justify-center aspect-video">Desktop Schedule 2</SwiperSlide>
-          <SwiperSlide className="flex items-center justify-center aspect-video">Desktop Schedule 3</SwiperSlide>
+          <SwiperSlide 
+            className="flex items-center justify-center"
+          >
+            <img src="/program1.png" className="w-full" />
+          </SwiperSlide>
+          <SwiperSlide 
+            className="flex items-center justify-center"
+          >
+            <img src="/program2.png" className="w-full" />
+          </SwiperSlide>
+          <SwiperSlide 
+            className="flex items-center justify-center"
+          >
+            <img src="/program3.png" className="w-full" />
+          </SwiperSlide>
         </Swiper>
         <div className="swiper-button-prev"></div>
         <div className="swiper-button-next"></div>        
       </div>
       <div className="w-full px-5 sm:hidden">
-        <div className="flex items-center justify-center border border-black w-full mb-5 aspect-video">Mobile Schedule 1</div>
-        <div className="flex items-center justify-center border border-black w-full mb-5 aspect-video">Mobile Schedule 2</div>
-        <div className="flex items-center justify-center border border-black w-full mb-5 aspect-video">Mobile Schedule 3</div>
+        <div className="flex items-center justify-center w-full">
+            <img src="/program1.png" className="w-full" />
+        </div>
+        <div className="flex items-center justify-center w-full">
+            <img src="/program2.png" className="w-full" />
+        </div>
+        <div className="flex items-center justify-center w-full">
+            <img src="/program3.png" className="w-full" />
+        </div>
       </div>
     </section>
   );

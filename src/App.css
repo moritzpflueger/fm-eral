@@ -59,11 +59,11 @@ body {
 }
 
 .swiper-button-prev {
-  left: -60px !important; /* Adjust as needed */
+  /* left: -60px !important;  */
 }
 
 .swiper-button-next {
-  right: -60px !important; /* Adjust as needed */
+  /* right: -60px !important;  */
 }
 
 a {
