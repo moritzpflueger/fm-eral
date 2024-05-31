@@ -16,7 +16,7 @@ const Menu = ({ showMenu, handleMenuToggle }) => {
           <li className="absolute top-2 right-1">
             <button 
               onClick={hideMenu}
-              className="w-16 h-16"
+              className="w-12 h-12"
             >
               <IconClose />
             </button>
