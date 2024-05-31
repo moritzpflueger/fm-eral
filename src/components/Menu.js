@@ -44,7 +44,7 @@ const Menu = ({ showMenu, handleMenuToggle }) => {
               Instagram
             </a>
           </li>
-          <li className="mt-16 mb-8 text-xl sm:text-2xl flex gap-2 sm:gap-5">
+          <li className="mt-16 mb-8 text-xl sm:text-2xl flex gap-2 sm:gap-5 flex-wrap">
             <Link to="/impressum" onClick={hideMenu}>
               Impressum
             </Link>
