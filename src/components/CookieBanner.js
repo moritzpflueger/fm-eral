@@ -16,12 +16,12 @@ const CookieBanner = () => {
   if (cookieConsent) return null;
 
   return (
-    <div className="fixed z-10 bottom-5 left-5 pl-3 pr-5 bg-black text-white flex items-center">
+    <div className="fixed z-10 bottom-3 sm:bottom-5 left-3 sm:left-5 right-3 sm:right-auto pl-3 py-0 pr-5 bg-black text-white flex items-center">
       <button 
         onClick={() => setCookieConsent(prev => !prev)}
         className="p-2 mr-3 text-3xl"
       >✕</button>
-      <span className="text-xl">This site uses cookies</span>
+      <span className="text-xl py-2">This site uses cookies</span>
     </div>        
   )
 
