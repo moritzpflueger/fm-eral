@@ -6,17 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-fmBlue text-white p-10">
       <p>
-        Odio tem del mint et endia int aliqui occabo. Pient volupta
-        tisque ipidelent faces nobisquo tem dolo voluptium harchil
-        in nos es alia vello et faccat late nonse diti as consendam et
-        eum nus essit harum facepeles sitibus eatioria doluptus. Sa
-        vel ipieturia apid magnimod quossimagnis apid quo maion
-
-        ne cullaccus evelique es dipit faccusa sit aut ut dolore vitem-
-        pere delesse quatemp orpore ressunt laborepudi bea ipsaesti
-
-        as natur arum is dolor re prorese quatium quatur atem nem
-        nimagni volum faceptate et, que reper          
+        Curatorial concept and implementation: Kirill Agafonov, Florian Amoser, Jonas Bernetta, Sharon Chan, Alisha Dutt Islam, Nistiman Erdede, Hannah Essler, Micol Favini, Tsz Hei Fung, Christian Gieben, Emanuel Haab, Roni Idrizaj, Charles Kwong, Ludwig Lederer, Sébastien Mitra, Engy Mohsen, Hans-Jakob Mühlethaler, Jan Reimann, Hiba Tahhan, Soraya Tashima, Anastasia Tatarenko, Egor Tatarenko. Supervision and support: Nicole Frei, Simon Grab, Patrick Müller, Nicholas Schärer, Irene Vögeli       
       </p>
       <div className="flex flex-wrap items-center justify-between py-10 order-1 gap-5">
         <Link to="/legal" >legal notice</Link>
