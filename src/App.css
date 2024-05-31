@@ -72,35 +72,35 @@ a {
 
 /* LOGO SVG */
 
-.cls-1 {
+.cls-1_pointscrosses {
   clip-path: url(#clippath);
 }
 
-.cls-2, .cls-3, .cls-4 {
+.cls-2_pointscrosses, .cls-3_pointscrosses, .cls-4_pointscrosses {
   stroke-width: 0px;
 }
 
-.cls-2, .cls-5 {
+.cls-2_pointscrosses, .cls-5_pointscrosses {
   fill: none;
 }
 
-.cls-6 {
+.cls-6_pointscrosses {
   clip-path: url(#clippath-1);
 }
 
-.cls-7 {
+.cls-7_pointscrosses {
   clip-path: url(#clippath-3);
 }
 
-.cls-8 {
+.cls-8_pointscrosses {
   clip-path: url(#clippath-2);
 }
 
-.cls-4 {
+.cls-4_pointscrosses {
   fill: #231f20;
 }
 
-.cls-5 {
+.cls-5_pointscrosses {
   stroke: #000;
   stroke-linecap: round;
 }
