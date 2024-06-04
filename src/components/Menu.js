@@ -22,7 +22,9 @@ const Menu = ({ showMenu, handleMenuToggle }) => {
             </button>
           </li>
           <li className="text-xl sm:text-2xl">
-            FMeral.world
+            <Link to="/" onClick={hideMenu}>
+              FMeral.world
+            </Link>
           </li>
           <li className="mt-16" style={{ fontFamily: 'Synt, serif'}}>
             <Link to="/#about" onClick={hideMenu}>
