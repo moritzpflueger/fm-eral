@@ -10,9 +10,9 @@ const Imprint = () => {
   }, [location]);
 
   return (
-    <div className="p-10">
+    <section className="p-10">
       <h1 
-        className="text-5xl sm:text-7xl font-serif my-10 sm:my-16"
+        className="text-4xl sm:text-5xl font-serif my-10 sm:my-16"
         style={{ fontFamily: 'Synt, serif' }}
       >
         Impressum
@@ -30,9 +30,9 @@ const Imprint = () => {
         <br />
         <br />
 
-        Tel. +41 43 446 33 33
+        <a className="underline" href="tel:+41434463333">Tel. +41 43 446 33 33</a>
         <br />
-        kontakt.mtr@zhdk.ch
+        <a className="underline" href="mailto:kontakt.mtr@zhdk.ch">kontakt.mtr@zhdk.ch</a>
 
         <br />
         <br />
@@ -40,7 +40,7 @@ const Imprint = () => {
         <br />
         Monday till Friday, 8.30–11.30h
       </p>
-    </div>
+    </section>
   );
 };
 
