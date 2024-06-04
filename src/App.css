@@ -66,6 +66,23 @@ body {
   cursor: pointer !important;
 }
 
+.schedule_zoomed-in {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  position: fixed;
+  top: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.schedule_zoomed-in .swiper-button-next,
+.schedule_zoomed-in .swiper-button-prev {
+  display: none;
+}
+
 .swiper-button-prev {
   /* left: -60px !important;  */
 }

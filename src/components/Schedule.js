@@ -1,17 +1,22 @@
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 const Schedule = () => {
+
+  const [isZoomedIn, setIsZoomedIn] = useState(false);
+
   return (
     <section 
       id="schedule"
       className="w-full flex justify-center pt-24 -mt-24"
     >
       <div 
-        className="relative w-full max-w-3xl hidden sm:block"
+        className={`${isZoomedIn ? 'schedule_zoomed-in cursor-pointer' : 'w-full relative max-w-3xl'} hidden sm:block`}
         style={{ fontFamily: 'Synt, sans-serif' }}
+        onClick={() => isZoomedIn && setIsZoomedIn(false)}
       >
         <Swiper
           modules={[Navigation]}
@@ -26,17 +31,20 @@ const Schedule = () => {
           }
         >
           <SwiperSlide 
-            className="flex items-center justify-center"
-          >
+            className="flex items-center justify-center cursor-pointer"
+            onClick={() => setIsZoomedIn(prev => !prev)}
+            >
             <img src="/program1.png" className="w-full" />
           </SwiperSlide>
           <SwiperSlide 
-            className="flex items-center justify-center"
-          >
+            className="flex items-center justify-center cursor-pointer"
+            onClick={() => setIsZoomedIn(prev => !prev)}
+            >
             <img src="/program2.png" className="w-full" />
           </SwiperSlide>
           <SwiperSlide 
-            className="flex items-center justify-center"
+            className="flex items-center justify-center cursor-pointer"
+            onClick={() => setIsZoomedIn(prev => !prev)}
           >
             <img src="/program3.png" className="w-full" />
           </SwiperSlide>
