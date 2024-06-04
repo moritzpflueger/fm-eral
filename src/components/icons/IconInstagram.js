@@ -2,7 +2,7 @@ const IconInstagram = () => {
   return (
     <svg 
       id="icon-instagram" 
-      className="w-16 h-16" 
+      className="w-12 h-12" 
       viewBox="0 0 24 24" 
       fill="currentColor" 
       stroke="none"

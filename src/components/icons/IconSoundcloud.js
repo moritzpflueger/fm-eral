@@ -2,7 +2,7 @@ const IconSoundcloud = () => {
   return (
     <svg
       id="icon-soundcloud"
-      className="w-20 h-20"
+      className="w-16 h-16"
       xmlns="http://www.w3.org/2000/svg"
       version="1.0"
       viewBox="-1.59018003 -1.59018003 96.16536106 56.18636106"

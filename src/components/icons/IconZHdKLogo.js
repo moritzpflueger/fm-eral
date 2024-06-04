@@ -5,6 +5,7 @@ const IconZHdKLogo = () => {
       xmlns="http://www.w3.org/2000/svg" 
       viewBox="0 0 1208 552"
       fill="currentColor"
+      className="w-48"
     >
       <title>ZHdK_Logo</title>
       {/* <style>
