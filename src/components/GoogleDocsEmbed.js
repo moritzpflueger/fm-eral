@@ -4,7 +4,7 @@ const GoogleDocsEmbed = () => {
 
   const iframeRef = useRef(null);
 
-  const baseHeight = 10350; // Base height for widths >= 800px
+  const baseHeight = 10600; // Base height for widths >= 800px
 
   const breakpoints = [
     { min: 775, max: 800, heightFactor: 1.02 },
