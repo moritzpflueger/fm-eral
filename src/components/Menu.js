@@ -46,6 +46,11 @@ const Menu = ({ showMenu, handleMenuToggle }) => {
               Instagram
             </a>
           </li>
+          <li className="mt-8" style={{ fontFamily: 'Synt, serif'}}>
+            <a href="https://soundcloud.com/kontakt-mtr" target="_blank" onClick={hideMenu}>
+              Archive
+            </a>
+          </li>
           <li className="mt-16 mb-8 text-xl sm:text-2xl flex gap-2 sm:gap-5 flex-wrap">
             <Link to="/impressum" onClick={hideMenu}>
               Impressum
