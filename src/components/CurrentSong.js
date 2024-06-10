@@ -5,7 +5,7 @@ const CurrentSong = () => {
   const [isLive, setIsLive] = useState(false);
 
   // Define the start and end times for the 'LIVE' display
-  const liveStartTime = '12:00'; // 2:00 PM
+  const liveStartTime = '17:00'; // 5:00 PM
   const liveEndTime = '20:00'; // 8:00 PM
 
   const checkLiveStatus = () => {
