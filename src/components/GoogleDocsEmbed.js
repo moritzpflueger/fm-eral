@@ -4,7 +4,7 @@ const GoogleDocsEmbed = () => {
 
   const iframeRef = useRef(null);
 
-  const baseHeight = 10600; // Base height for widths >= 800px
+  const baseHeight = 11800; // Base height for widths >= 800px
 
   const breakpoints = [
     { min: 775, max: 800, heightFactor: 1.02 },
@@ -21,13 +21,13 @@ const GoogleDocsEmbed = () => {
     { min: 500, max: 525, heightFactor: 1.095 },
     { min: 475, max: 500, heightFactor: 1.115 },
     { min: 450, max: 475, heightFactor: 1.15 },
-    { min: 425, max: 450, heightFactor: 1.16 },
-    { min: 400, max: 425, heightFactor: 1.18 },
-    { min: 390, max: 400, heightFactor: 1.22 },
-    { min: 380, max: 390, heightFactor: 1.23 },
-    { min: 370, max: 380, heightFactor: 1.245 },
-    { min: 360, max: 370, heightFactor: 1.26 },
-    { min: 300, max: 360, heightFactor: 1.3 },
+    { min: 425, max: 450, heightFactor: 1.185 },
+    { min: 400, max: 425, heightFactor: 1.23 },
+    { min: 390, max: 400, heightFactor: 1.255 },
+    { min: 380, max: 390, heightFactor: 1.27 },
+    { min: 370, max: 380, heightFactor: 1.28 },
+    { min: 360, max: 370, heightFactor: 1.3 },
+    { min: 300, max: 360, heightFactor: 1.4 },
   ];
 
   const calculateHeight = () => {
